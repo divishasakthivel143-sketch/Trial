@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Zoho Books Poster - Workfigure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Fonts (optional but recommended for exact match) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Barlow+Semi+Condensed:wght@500&family=Acme&family=Hanken+Grotesk:wght@900&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background: #ffffff;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    /* FINAL */
+    .poster {
+      position: relative;
+      width: 595px;
+      height: 842px;
+      background: #FFFFFF;
+      overflow: hidden;
+    }
+
+    /* BACKGROUND IMAGE (b64407...) */
+    .bg-main {
+      position: absolute;
+      width: 673px;
+      height: 1013px;
+      left: -76px;
+      top: -130px;
+
+      /* PUT YOUR FILE PATH HERE */
+      background: url("C:\Users\admin\Downloads\Workfigure Poster\poster_assets\bg.jpeg");
+
+      background-repeat: no-repeat;
+      background-size: 673px 1013px;
+      background-position: left top;
+    }
+
+    /* Frame 2 */
+    .footer-bar {
+      position: absolute;
+      width: 595px;
+      height: 40px;
+      left: 0px;
+      top: 802px;
+      background: #4A8BEE;
+    }
+
+    /* © 2026 Workfigure Private Limited | All Rights Reserved */
+    .footer-text {
+      position: absolute;
+      width: 355px;
+      height: 20px;
+      left: 120px;
+      top: 10px;
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 20px;
+      color: #FFFFFF;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    /* Frame 1 */
+    .top-bar {
+      position: absolute;
+      width: 595px;
+      height: 47px;
+      left: 0px;
+      top: 78px;
+
+      background: rgba(31, 111, 235, 0.8);
+      border-radius: 0px;
+    }
+
+    /* Need Help with Zoho Books ? */
+    .headline {
+      position: absolute;
+      width: 328px;
+      height: 28px;
+      left: 134px;
+      top: 0px;
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 28px;
+      text-align: right;
+
+      color: #FFFFFF;
+      white-space: nowrap;
+    }
+
+    /* Get Your Personalized Demo Today */
+    .subheadline {
+      position: absolute;
+      width: 217px;
+      height: 19px;
+      left: 163px;
+      top: 27px;
+
+      font-family: 'Barlow Semi Condensed';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+
+      color: #FFFFFF;
+      white-space: nowrap;
+    }
+
+    /* ZOHO LOGO */
+    .zoho-logo {
+      position: absolute;
+      width: 174px;
+      height: 174px;
+      left: 50px;
+      top: -49px;
+
+      /* PUT YOUR FILE PATH HERE */
+      background: url("C:\Users\admin\Downloads\Workfigure Poster\poster_assets\zoho-logo_brandlogos.net_kduhg.png");
+
+      background-repeat: no-repeat;
+      background-size: 174px 174px;
+      background-position: left top;
+    }
+
+    /* Rectangle 18 - Workfigure logo */
+    .workfigure-logo {
+      position: absolute;
+      width: 250px;
+      height: 49px;
+      left: 295px;
+      top: 15px;
+
+      /* PUT YOUR FILE PATH HERE */
+      background: url("C:\Users\admin\Downloads\Workfigure Poster\poster_assets\Workfigure_Logo_page-0001-removebg-preview.png");
+
+      background-repeat: no-repeat;
+      background-size: 250px 49px;
+      background-position: left top;
+    }
+
+    /* Rectangle 22 */
+    .rect-22 {
+      position: absolute;
+      width: 595px;
+      height: 410px;
+      left: 0px;
+      top: 125px;
+
+      /* PUT YOUR FILE PATH HERE */
+      background: url("C:\Users\admin\Downloads\Workfigure Poster\poster_assets\illus_1.png");
+
+      background-repeat: no-repeat;
+      background-size: 595px 410px;
+      background-position: left top;
+
+      border-radius: 100px 0px;
+      overflow: hidden;
+    }
+
+    /* Frame 3 (button background) */
+    .cta-frame {
+      position: absolute;
+      width: 141px;
+      height: 40px;
+      left: 214px;
+      top: 473px;
+
+      background: #E42527;
+      border-radius: 30px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* BOOK NOW */
+    .cta-link {
+      display: inline-block;
+      width: 99px;
+      height: 20px;
+
+      font-family: 'Hanken Grotesk';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 20px;
+      text-align: right;
+      text-decoration-line: underline;
+
+      color: #FFFFFF;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    .cta-link:link, .cta-link:visited { color: #FFFFFF; text-decoration: underline; }
+    .cta-link:hover, .cta-link:active { color: #FFFFFF; opacity: 0.9; }
+
+    /* Rectangle 20 */
+    .rect-20 {
+      position: absolute;
+      width: 553px;
+      height: 204px;
+      left: 21px;
+      top: 547px;
+
+      /* PUT YOUR FILE PATH HERE */
+      background: url("C:\Users\admin\Downloads\Workfigure Poster\poster_assets\illus_2.png");
+
+      background-repeat: no-repeat;
+      background-size: 553px 204px;
+      background-position: left top;
+
+      border-radius: 100px;
+      overflow: hidden;
+    }
+
+    /* Email icon */
+    .email-icon {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: 45px;
+      top: 760px;
+
+      /* PUT YOUR FILE PATH HERE */
+      background: url("C:\Users\admin\Downloads\Workfigure Poster\poster_assets\Email.png");
+
+      background-repeat: no-repeat;
+      background-size: 25px 25px;
+      background-position: left top;
+    }
+
+    /* Phone icon */
+    .phone-icon {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: 332px;
+      top: 761px;
+
+      /* PUT YOUR FILE PATH HERE */
+      background: url("C:\Users\admin\Downloads\Workfigure Poster\poster_assets\Phone.png");
+
+      background-repeat: no-repeat;
+      background-size: 25px 25px;
+      background-position: left top;
+    }
+
+    /* Email : enquiry@workfigure.in | */
+    .email-text {
+      position: absolute;
+      width: 250px;
+      height: 20px;
+      left: 76px;
+      top: 763px;
+
+      font-family: 'Acme';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      color: #008080;
+      white-space: nowrap;
+    }
+
+    /* Ph : 8220500892 */
+    .phone-text {
+      position: absolute;
+      width: 137px;
+      height: 20px;
+      left: 362px;
+      top: 763px;
+
+      font-family: 'Acme';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      color: #008080;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="poster">
+    <div class="bg-main"></div>
+
+    <div class="rect-22"></div>
+
+    <div class="zoho-logo"></div>
+    <div class="workfigure-logo"></div>
+
+    <div class="top-bar">
+      <div class="headline">Need Help with Zoho Books ?</div>
+      <div class="subheadline">Get Your Personalized Demo Today</div>
+    </div>
+
+    <div class="cta-frame">
+      <a class="cta-link"
+         href="https://director-workfigure56.zohobookings.in/#/workfigure"
+         target="_blank"
+         rel="noopener noreferrer">
+        BOOK NOW
+      </a>
+    </div>
+
+    <div class="rect-20"></div>
+
+    <div class="email-icon"></div>
+    <div class="phone-icon"></div>
+
+    <div class="email-text">Email : enquiry@workfigure.in |</div>
+    <div class="phone-text">Ph : 8220500892</div>
+
+    <div class="footer-bar">
+      <div class="footer-text">© 2026 Workfigure Private Limited | All Rights Reserved</div>
+    </div>
+  </div>
+</body>
+</html>
